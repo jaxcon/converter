@@ -1,0 +1,1 @@
+export const targetFormats = ["MP3", "WAV", "AAC", "FLAC", "OGG", "AIFF"];

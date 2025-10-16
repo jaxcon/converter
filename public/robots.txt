@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+Sitemap: https://www.easyconvert.space/sitemap.xml
+Host: www.easyconvert.space

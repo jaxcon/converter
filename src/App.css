@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.sidebar-ad-banner {
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar-ad-banner {
+    position: relative;
+    height: 200px !important;
+    min-height: 200px !important;
+  }
+}

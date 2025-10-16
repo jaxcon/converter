@@ -1,0 +1,1 @@
+export const TARGET_FORMATS = ["MP4", "WEBM", "AVI", "MOV", "MKV", "OGG", "WMV", "FLV", "3GP", "MPEG"];

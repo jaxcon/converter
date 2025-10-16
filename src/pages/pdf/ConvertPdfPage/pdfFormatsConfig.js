@@ -1,0 +1,1 @@
+export const targetFormats = ["JPG", "PNG", "TXT", "DOCX", "HTML", "XLSX"];

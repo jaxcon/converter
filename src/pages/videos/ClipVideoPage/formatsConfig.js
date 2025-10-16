@@ -1,0 +1,1 @@
+export const SUPPORTED_FORMATS = ["mp4", "mov", "mkv", "webm", "m4v"];
