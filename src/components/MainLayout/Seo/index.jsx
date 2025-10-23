@@ -13,8 +13,8 @@ const Seo = ({ pageKey }) => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <link rel="canonical" href={canonical} />
-            <link rel="alternate" href="https://easyconvert.space/ru/" hreflang="ru" />
-            <link rel="alternate" href="https://easyconvert.space/en/" hreflang="en" />
+            <link rel="alternate" href="https://easyconvert.space/ru/" hrefLang="ru" />
+            <link rel="alternate" href="https://easyconvert.space/en/" hrefLang="en" />
         </Helmet>
     );
 };

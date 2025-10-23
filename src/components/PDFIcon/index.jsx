@@ -18,5 +18,5 @@ const PDFIcon = memo(() => (
         <path d="M9 9h1"></path>
     </svg>
 ));
-
+PDFIcon.displayName = 'PDFIcon';
 export default PDFIcon;

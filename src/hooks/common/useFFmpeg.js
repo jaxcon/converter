@@ -55,13 +55,17 @@ export function useFFmpeg() {
                 results[out] = data;
                 try {
                     await ffmpegRef.current.deleteFile(out);
-                } catch { }
+                } catch (error) {
+                    console.error('FFmpeg error:', error);
+                }
             }
 
             for (const name of Object.keys(files)) {
                 try {
                     await ffmpegRef.current.deleteFile(name);
-                } catch { }
+                } catch (error) {
+                    console.error('FFmpeg error:', error);
+                }
             }
 
             return results;

@@ -34,7 +34,7 @@ export function useVideoCompress() {
         };
     }, [files]);
 
-    const getCompressionOptions = (fileType, fileName, originalSizeMB) => {
+    const getCompressionOptions = (fileType, fileName) => {
         const format = getVideoFormat(fileType, fileName);
 
         if (format === "webm") {

@@ -273,7 +273,7 @@ export function useVideoConverter() {
                 }
             });
 
-            ffmpegInstancesRef.current.forEach((ffmpeg, id) => {
+            ffmpegInstancesRef.current.forEach((ffmpeg) => {
                 ffmpeg.terminate();
             });
             ffmpegInstancesRef.current.clear();

@@ -1,16 +1,16 @@
 export const progressReducer = (state, action) => {
     switch (action.type) {
-        case "SET_PROGRESS":
+        case "SET_PROGRESS": {
             return new Map(state).set(action.payload.fileId, action.payload.progress);
-        
-        case "REMOVE_PROGRESS":
+        }
+        case "REMOVE_PROGRESS": {
             const newState = new Map(state);
             newState.delete(action.payload.fileId);
             return newState;
-        
-        case "RESET_ALL":
+        }
+        case "RESET_ALL": {
             return new Map();
-        
+        }
         default:
             return state;
     }

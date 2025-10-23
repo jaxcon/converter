@@ -225,19 +225,21 @@ export function useAudioCrop() {
         setSelection((prev) => {
             const newSelection = { ...prev };
             switch (dragType.current) {
-                case "start":
+                case "start": {
                     newSelection.start = Math.max(
                         0,
                         Math.min(dragStartValues.current.start + deltaTime, prev.end - 0.1)
                     );
                     break;
-                case "end":
+                }
+                case "end": {
                     newSelection.end = Math.min(
                         duration,
                         Math.max(dragStartValues.current.end + deltaTime, prev.start + 0.1)
                     );
                     break;
-                case "move":
+                }
+                case "move": {
                     const range = prev.end - prev.start;
                     const newStart = Math.max(
                         0,
@@ -246,6 +248,7 @@ export function useAudioCrop() {
                     newSelection.start = newStart;
                     newSelection.end = newStart + range;
                     break;
+                }
             }
             return newSelection;
         });

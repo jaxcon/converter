@@ -148,7 +148,7 @@ export function useImageCrop() {
             "bottom-right": x > cropRect.width - handleSize && y > cropRect.height - handleSize,
         };
 
-        const corner = Object.entries(corners).find(([_, v]) => v)?.[0];
+        const corner = Object.entries(corners).find(([key, value]) => value)?.[0];
         if (corner) {
             setIsResizing(true);
             setResizeDirection(corner);

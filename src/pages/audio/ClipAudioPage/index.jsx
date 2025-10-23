@@ -32,7 +32,6 @@ export default function CropAudioPage({ pageKey }) {
         handleStart,
         handlePlayPause,
         handleCropAndDownload,
-        formatTime,
     } = useAudioCrop();
 
     const { t } = useTranslation();
